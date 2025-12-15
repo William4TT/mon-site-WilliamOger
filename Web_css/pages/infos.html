@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <h1>Page d'Informations</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="infos.html">Infos</a></li>
+                <li><a href="https://validator.w3.org/nu/#textarea" target="_blank">Validateur W3C</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p>Ceci est un texte sur la page d'informations.</p>
+
+        <h2>Formulaire d'infos</h2>
+        <form action="#" method="post" class="card">
+            
+            <div>
+                <label for="nom">Nom (champ texte) :</label>
+                <input type="text" id="nom" name="nom">
+            </div>
+
+            <div>
+                <label for="mdp">Mot de passe :</label>
+                <input type="password" id="mdp" name="mdp">
+            </div>
+
+            <div>
+                <input type="checkbox" id="conditions" name="conditions">
+                <label for="conditions">Accepter les conditions (checkbox)</label>
+            </div>
+
+            <fieldset>
+                <legend>Choix (boutons radio) :</legend>
+                <input type="radio" id="radioA" name="choix_radio" value="A">
+                <label for="radioA">Option A</label>
+                <input type="radio" id="radioB" name="choix_radio" value="B">
+                <label for="radioB">Option B</label>
+            </fieldset>
+
+            <div>
+                <label for="selection">Menu déroulant :</label>
+                <select id="selection" name="selection">
+                    <option value="1">Choix 1</option>
+                    <option value="2">Choix 2</option>
+                    <option value="3">Choix 3</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="message">Zone de texte :</label><br>
+                <textarea id="message" name="message" rows="5" cols="40"></textarea>
+            </div>
+
+            <div>
+                <button type="submit">Envoyer</button>
+            </div>
+        </form>
+
+    </main>
+
+    <footer id="main-footer">
+        <p>Crédits : Site créé par Timéo Leplusbo le 15-10-2025</p>
+    </footer>
+
+</body>
+</html>
